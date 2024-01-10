@@ -1,0 +1,63 @@
+Oracle Database
+username = admin
+password = abcd1234
+
+-----------------------------------------------------
+Get distinace(Get API):
+http://localhost:7000/api/post
+
+Authrization:Basic Authrization
+User Name = admin
+Password = password
+
+Request Body :
+{
+    "postCode":"AB10 1XG",
+    "postCode2":"AB10 6RN"
+}
+
+Response :
+{
+    "postCode": "AB10 1XG",
+    "postCode2": "AB10 6RN",
+    "distance": "0.81km"
+}
+
+Request log:
+Post Code 1 : AB10 1XG
+Post Code 2 : AB10 6RN
+
+----------------------------------------------------
+Update longitude and latitude(Put Api) based on post code
+http://localhost:7000/api/post/AB10 1XG
+
+Authrization:Basic Authrization
+User Name = admin
+Password = password
+
+Request body:
+{
+    "latitude":"57.144156",
+    "longitude":"-2.114864"
+}
+
+
+Response:
+{
+    "id": 1,
+    "postCode": "AB10 1XG",
+    "latitude": "57.144156",
+    "longitude": "-2.114864"
+}
+
+
+---------------------------------------------------
+Unit Test:
+Junit
+testJunit.java
+
+Output:
+Distance : 0.81km
+---------------------------------------------------
+
+
