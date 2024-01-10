@@ -3,6 +3,16 @@ username = admin
 password = abcd1234
 
 -----------------------------------------------------
+Spring Boot v3.1.0
+-----------------------------------------------------
+Run Project:
+
+Eclipse
+Import project :click Import > Existing Maven Projectc
+
+After Import , right click Project > Run as > Spring Boot App
+----------------------------------------------
+
 Get distinace(Get API):
 http://localhost:7000/api/post
 
@@ -56,8 +66,18 @@ Unit Test:
 Junit
 testJunit.java
 
+Step to run:
+Right click testJunit.java in eclipse > Run As > Junit Test
+
 Output:
 Distance : 0.81km
 ---------------------------------------------------
 
+Library using:
 
+Junit - enable Junit Test
+com.oracle.database.jdbc - to connect to Oracle database
+spring-boot-starter-security - to add security(Basic Auth) to API
+
+
+----------------------------------------------------
